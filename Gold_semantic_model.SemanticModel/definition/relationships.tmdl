@@ -1,0 +1,12 @@
+relationship d4144359-519e-e2d3-69ba-f589aa9f0379
+	fromColumn: fact_sales.ProductKey
+	toColumn: dim_product.ProductKey
+
+relationship 45bead25-ef46-ec28-c78c-1257e83264c4
+	fromColumn: fact_sales.CustomerKey
+	toColumn: dim_customer.CustomerKey
+
+relationship d2b7201e-98ec-febc-f0de-f4504d3e03cc
+	fromColumn: fact_sales.TerritoryKey
+	toColumn: dim_territory.SalesTerritoryKey
+

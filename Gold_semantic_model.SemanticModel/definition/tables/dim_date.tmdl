@@ -1,0 +1,51 @@
+table dim_date
+	lineageTag: 8f3fbd8a-a5b9-4eef-9bac-9766e741e74c
+	sourceLineageTag: [gold].[dim_date]
+
+	column DateKey
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ea39a3f4-8782-44a3-acca-6ada2fb7964e
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: cb711eeb-82c7-44a9-a10e-3b072b1d66d8
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: 507fa0dd-bc53-4412-a272-d5a5857ed706
+		sourceLineageTag: Month
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 400942e5-2960-4c26-90ac-eb2d780e589b
+		sourceLineageTag: Day
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = entity
+		mode: directLake
+		source
+			entityName: dim_date
+			schemaName: gold
+			expressionSource: 'DirectLake - warehouse'
+

@@ -1,0 +1,48 @@
+table dim_territory
+	lineageTag: d2077a2c-7e5d-4d2d-9b08-06d6633c91ef
+	sourceLineageTag: [gold].[dim_territory]
+
+	column SalesTerritoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: fa2d67f7-c3a0-411f-920e-e3ff8fa7c5ec
+		sourceLineageTag: SalesTerritoryKey
+		summarizeBy: none
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 2cd5704d-2956-49ff-91d2-af4b409a7c89
+		sourceLineageTag: Region
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 31c861ec-2a49-4093-943f-a45c0e6f9f10
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		lineageTag: 27c96968-235a-443c-80cf-33bf76fa5ae7
+		sourceLineageTag: Continent
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_territory = entity
+		mode: directLake
+		source
+			entityName: dim_territory
+			schemaName: gold
+			expressionSource: 'DirectLake - warehouse'
+

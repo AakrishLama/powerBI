@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Report",
-    "displayName": "finalized_draft_report"
+    "displayName": "Gold_semantic_model"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "a36771b2-920a-4f53-a242-c4617b40c999"
+    "logicalId": "70f228c3-e171-44ef-b5cb-1e38b342a56f"
   }
 }

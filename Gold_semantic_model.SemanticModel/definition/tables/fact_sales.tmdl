@@ -1,0 +1,96 @@
+/// Represents a sales transaction line item.
+table fact_sales
+	lineageTag: 79d4131b-b480-410c-9ab6-c171d2d44cbd
+	sourceLineageTag: [gold].[fact_sales]
+
+	column OrderDateKey
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ed039b63-9dd7-48d6-abe5-eda25f4ff115
+		sourceLineageTag: OrderDateKey
+		summarizeBy: none
+		sourceColumn: OrderDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockDateKey
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e36747d1-9364-4a28-87fc-f287d103e244
+		sourceLineageTag: StockDateKey
+		summarizeBy: none
+		sourceColumn: StockDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderNumber
+		dataType: string
+		lineageTag: 6ee0af7a-8914-491d-b1bd-75ee906fa985
+		sourceLineageTag: OrderNumber
+		summarizeBy: none
+		sourceColumn: OrderNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b8041f7-f1b0-4aaf-a1cd-b0ba23b490e7
+		sourceLineageTag: ProductKey
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ea516ec-cd73-4e25-8c76-3302868a71e3
+		sourceLineageTag: CustomerKey
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column TerritoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: b7db69b9-448e-4aea-8b6a-3702115d2a46
+		sourceLineageTag: TerritoryKey
+		summarizeBy: none
+		sourceColumn: TerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderLineItem
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d8ba472-6430-48bb-8899-f888b5fd1cc8
+		sourceLineageTag: OrderLineItem
+		summarizeBy: sum
+		sourceColumn: OrderLineItem
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Number of product units sold.
+	column OrderQuantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b5890c4-d129-49c7-a5da-ef46a1fcaf61
+		sourceLineageTag: OrderQuantity
+		summarizeBy: sum
+		sourceColumn: OrderQuantity
+
+		changedProperty = Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_sales = entity
+		mode: directLake
+		source
+			entityName: fact_sales
+			schemaName: gold
+			expressionSource: 'DirectLake - warehouse'
+
+	changedProperty = Description
+

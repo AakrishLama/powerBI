@@ -1,0 +1,160 @@
+/// Represents a sellable product.afasdf
+table dim_product
+	lineageTag: b48da5fe-ab2d-4677-9987-6ab221b24f9c
+	sourceLineageTag: [gold].[dim_product]
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 54d47a28-9d3d-4485-b089-a5a0d33a07b2
+		sourceLineageTag: ProductKey
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSKU
+		dataType: string
+		lineageTag: e88015dc-144a-486c-9689-a4f74b554426
+		sourceLineageTag: ProductSKU
+		summarizeBy: none
+		sourceColumn: ProductSKU
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: b301f80e-ce1b-4cb7-aa29-2eb688a59ba3
+		sourceLineageTag: ProductName
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModelName
+		dataType: string
+		lineageTag: fbb816c1-ea84-427d-9eda-f437e3dd66ce
+		sourceLineageTag: ModelName
+		summarizeBy: none
+		sourceColumn: ModelName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductDescription
+		dataType: string
+		lineageTag: f35f5636-5d37-4782-9ea9-912b54698d2c
+		sourceLineageTag: ProductDescription
+		summarizeBy: none
+		sourceColumn: ProductDescription
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductColor
+		dataType: string
+		lineageTag: 5154cefc-e980-43af-97f0-82061636681d
+		sourceLineageTag: ProductColor
+		summarizeBy: none
+		sourceColumn: ProductColor
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSize
+		dataType: string
+		lineageTag: c696a92f-accb-40b2-ab9e-171dbbeb0972
+		sourceLineageTag: ProductSize
+		summarizeBy: none
+		sourceColumn: ProductSize
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductStyle
+		dataType: string
+		lineageTag: 8adb42e9-7a6a-4816-80ce-5eec1129c918
+		sourceLineageTag: ProductStyle
+		summarizeBy: none
+		sourceColumn: ProductStyle
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCost
+		dataType: double
+		lineageTag: 9c42153e-cf8b-4992-874c-755ed73e4f34
+		sourceLineageTag: ProductCost
+		summarizeBy: none
+		sourceColumn: ProductCost
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// current list price of product.
+	column ProductPrice
+		dataType: double
+		lineageTag: 092ab1b4-59bf-48e2-9f55-4b5479f8ead6
+		sourceLineageTag: ProductPrice
+		summarizeBy: none
+		sourceColumn: ProductPrice
+
+		changedProperty = IsHidden
+
+		changedProperty = Description
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SubcategoryName
+		dataType: string
+		lineageTag: 820654bd-224a-4944-aeac-e5b826056a09
+		sourceLineageTag: SubcategoryName
+		summarizeBy: none
+		sourceColumn: SubcategoryName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Business category assigned to the product.
+	column CategoryName
+		dataType: string
+		lineageTag: 734ae45c-fd3d-4626-a21a-fd4e8d754d87
+		sourceLineageTag: CategoryName
+		isDefaultLabel
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		changedProperty = IsHidden
+
+		changedProperty = Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_product = entity
+		mode: directLake
+		source
+			entityName: dim_product
+			schemaName: gold
+			expressionSource: 'DirectLake - warehouse'
+
+	changedProperty = IsHidden
+
+	changedProperty = Description
+
