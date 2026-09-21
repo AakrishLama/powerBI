@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "271379848296488267",
+  "name": "sales_contains_product",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "26117967199371"
+  },
+  "target": {
+    "entityTypeId": "4343224992558"
+  },
+  "semanticEnrichment": {
+    "description": "A sale contains one or more products purchased by a customer.",
+    "customAttributes": {
+      "Buisness purpose": "used to analyse which products are sold",
+      "cardinality": "many sales -\u003E one product",
+      "Reporting usage": "product performance analysis"
+    }
+  }
+}

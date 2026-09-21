@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "2f25d5ca-aae6-4531-9620-66f43af37de8",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "ModelName",
+        "targetPropertyId": "5010780053037273069"
+      },
+      {
+        "sourceColumnName": "ProductColor",
+        "targetPropertyId": "5010780049897504873"
+      },
+      {
+        "sourceColumnName": "ProductCost",
+        "targetPropertyId": "5010780052069771181"
+      },
+      {
+        "sourceColumnName": "ProductDescription",
+        "targetPropertyId": "5010780051968686016"
+      },
+      {
+        "sourceColumnName": "ProductKey",
+        "targetPropertyId": "5010780050218452290"
+      },
+      {
+        "sourceColumnName": "ProductName",
+        "targetPropertyId": "5010780052035862951"
+      },
+      {
+        "sourceColumnName": "ProductPrice",
+        "targetPropertyId": "5010780050231199809"
+      },
+      {
+        "sourceColumnName": "ProductSize",
+        "targetPropertyId": "5010780050678224864"
+      },
+      {
+        "sourceColumnName": "ProductSKU",
+        "targetPropertyId": "5010780049904810441"
+      },
+      {
+        "sourceColumnName": "ProductStyle",
+        "targetPropertyId": "5010780095136380751"
+      },
+      {
+        "sourceColumnName": "ProductSubcategoryKey",
+        "targetPropertyId": "5010780094610897090"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6a6a7471-5759-9522-422a-efe6f044b83a",
+      "sourceTableName": "products",
+      "sourceSchema": "silver"
+    }
+  }
+}

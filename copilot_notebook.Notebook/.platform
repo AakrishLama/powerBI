@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "copilot_notebook",
+    "description": "A sample Fabric notebook connected to the same lakehouse as silver_layer."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "198f8972-3124-a32d-472c-b99f160a8e25"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Ontology",
+    "displayName": "Ontology_Gold_semantic_model",
+    "description": "Overall entity and relationship description."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5271f59a-bf17-a7d0-4036-e3d9cc380d96"
+  }
+}

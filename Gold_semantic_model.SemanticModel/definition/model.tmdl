@@ -11,8 +11,6 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_QueryOrder = ["DirectLake - warehouse"]
 
-annotation __LastRPTime = 134326590256548437
-
 annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb","WebModelingEdit","CalcGroup","RemoteModeling","DevMode"]
 
 ref table dim_customer

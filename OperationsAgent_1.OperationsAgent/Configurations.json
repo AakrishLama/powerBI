@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/operationsAgents/definition/1.0.0/schema.json",
+  "configuration": {
+    "instructions": "You are an inventory monitoring agent.\n\nMonitor stock levels.\n\nIf inventory falls below a defined threshold,\nidentify the affected products.\n\nDetermine which products are associated with\nhigh sales volume.\n\nGenerate a summary explaining:\n\n- Which products are at risk\n- Current inventory\n- Recent sales\n- Recommended action\n\u0060",
+    "dataSources": {
+      "5271f59a-bf17-a7d0-4036-e3d9cc380d96": {
+        "id": "5271f59a-bf17-a7d0-4036-e3d9cc380d96",
+        "type": "Ontology",
+        "workspaceId": "00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "actions": {}
+  },
+  "shouldRun": false
+}

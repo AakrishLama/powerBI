@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "609b0cca-f2a3-4043-bf81-460aaa645145",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6a6a7471-5759-9522-422a-efe6f044b83a",
+    "sourceTableName": "adventureworks_sales_2017",
+    "sourceSchema": "silver",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "OrderNumber",
+      "targetPropertyId": "5017628974046102062"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "OrderQuantity",
+      "targetPropertyId": "5010780050218452290"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "d0cf69d2-d64b-4c6d-a799-c9c7c601eaee",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "AnnualIncome",
+        "targetPropertyId": "5007530390561765654"
+      },
+      {
+        "sourceColumnName": "BirthDate",
+        "targetPropertyId": "5007530387127958762"
+      },
+      {
+        "sourceColumnName": "CustomerKey",
+        "targetPropertyId": "5007530389638308867"
+      },
+      {
+        "sourceColumnName": "EducationLevel",
+        "targetPropertyId": "5007530386624959079"
+      },
+      {
+        "sourceColumnName": "EmailAddress",
+        "targetPropertyId": "5007530386853678651"
+      },
+      {
+        "sourceColumnName": "FirstName",
+        "targetPropertyId": "5007530389860286836"
+      },
+      {
+        "sourceColumnName": "FullName",
+        "targetPropertyId": "5007530389983360830"
+      },
+      {
+        "sourceColumnName": "Gender",
+        "targetPropertyId": "5007530389859110313"
+      },
+      {
+        "sourceColumnName": "HomeOwner",
+        "targetPropertyId": "5007530390109798494"
+      },
+      {
+        "sourceColumnName": "LastName",
+        "targetPropertyId": "5007530386951912166"
+      },
+      {
+        "sourceColumnName": "MaritalStatus",
+        "targetPropertyId": "5007530386811340571"
+      },
+      {
+        "sourceColumnName": "Occupation",
+        "targetPropertyId": "5007530388838983437"
+      },
+      {
+        "sourceColumnName": "Prefix",
+        "targetPropertyId": "5007530389820722659"
+      },
+      {
+        "sourceColumnName": "TotalChildren",
+        "targetPropertyId": "5007530387029438991"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6a6a7471-5759-9522-422a-efe6f044b83a",
+      "sourceTableName": "customers",
+      "sourceSchema": "silver"
+    }
+  }
+}

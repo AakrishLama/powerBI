@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a88507fd-4305-475b-af94-2ed7ca5a737e",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "CustomerKey",
+        "targetPropertyId": "5017628974400674482"
+      },
+      {
+        "sourceColumnName": "OrderDate",
+        "targetPropertyId": "5017628973490587324"
+      },
+      {
+        "sourceColumnName": "OrderLineItem",
+        "targetPropertyId": "5017628973555761449"
+      },
+      {
+        "sourceColumnName": "OrderNumber",
+        "targetPropertyId": "5017628974046102062"
+      },
+      {
+        "sourceColumnName": "OrderQuantity",
+        "targetPropertyId": "5017628974473108407"
+      },
+      {
+        "sourceColumnName": "ProductKey",
+        "targetPropertyId": "5017628971313523325"
+      },
+      {
+        "sourceColumnName": "StockDate",
+        "targetPropertyId": "5017628972889400875"
+      },
+      {
+        "sourceColumnName": "TerritoryKey",
+        "targetPropertyId": "5017628971803105292"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6a6a7471-5759-9522-422a-efe6f044b83a",
+      "sourceTableName": "adventureworks_sales_2017",
+      "sourceSchema": "silver"
+    }
+  }
+}

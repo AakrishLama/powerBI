@@ -1,0 +1,236 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "22eb38537f53b648c9d2",
+  "displayName": "Page 1",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "autoPageGenerationConfig": {
+    "selectedFields": [
+      {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "dim_product"
+            }
+          },
+          "Property": "ProductSize"
+        }
+      },
+      {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "fact_sales"
+                }
+              },
+              "Property": "OrderLineItem"
+            }
+          },
+          "Function": 0
+        }
+      }
+    ],
+    "visualContainerConfigurations": [
+      {
+        "name": "a01391b86f65050c500b",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dim_product"
+                }
+              },
+              "Property": "ProductSize"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderLineItem"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "8ad027a29322b875f171",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dim_product"
+                }
+              },
+              "Property": "ProductSize"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderQuantity"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "f1d909cebf45277d603f",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dim_product"
+                }
+              },
+              "Property": "ProductColor"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderLineItem"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "451e7fcd65882bbdf3ab",
+        "fields": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dim_product"
+                }
+              },
+              "Property": "SubcategoryName"
+            }
+          },
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderLineItem"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "d66380fcf34e9c308b64",
+        "fields": []
+      },
+      {
+        "name": "a45992632131e734e389",
+        "fields": []
+      },
+      {
+        "name": "afdb74348d18cd1f511f",
+        "fields": []
+      },
+      {
+        "name": "fce32099380dc0c026c5",
+        "fields": []
+      },
+      {
+        "name": "daea5e68439c6aba7dc5",
+        "fields": []
+      },
+      {
+        "name": "80b25376a0a4380d3dad",
+        "fields": []
+      },
+      {
+        "name": "7410bafdd3d6ba74c475",
+        "fields": []
+      },
+      {
+        "name": "2f5364c77ef99a8cb284",
+        "fields": [
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderLineItem"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "ba659450921b51ad65a9",
+        "fields": [
+          {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_sales"
+                    }
+                  },
+                  "Property": "OrderQuantity"
+                }
+              },
+              "Function": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "3b7d855a7ae39a8ad770",
+        "fields": []
+      }
+    ],
+    "layout": {
+      "related": {
+        "version": 1
+      }
+    }
+  }
+}

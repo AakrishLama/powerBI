@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "271391503291465250",
+  "name": "A_customer_places_one_or_more_sales_order",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "26117967199371"
+  },
+  "target": {
+    "entityTypeId": "263799813964336"
+  },
+  "semanticEnrichment": {
+    "description": "A customer plpaces one or more sales orders. ",
+    "customAttributes": {
+      "Business purpose": "connects customers to transactional activity.",
+      "Cardinality": "One customer -\u003E Many sales",
+      "Reporting usage": "customer lifetime value and purchase behaviour analysis"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "26117967199371",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "fact_sales",
+  "entityIdParts": [
+    "271322190545112722",
+    "271322283992763543"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "271322148857359008",
+      "name": "OrderDateKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime"
+    },
+    {
+      "id": "271322168776158334",
+      "name": "StockDateKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime"
+    },
+    {
+      "id": "271322190545112722",
+      "name": "OrderNumber",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "271322215632573192",
+      "name": "ProductKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "271322237221388658",
+      "name": "CustomerKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "271322262286257103",
+      "name": "TerritoryKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "271322283992763543",
+      "name": "OrderLineItem",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "271322305422244385",
+      "name": "OrderQuantity",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "sale, sales trasaction, order, purchase"
+    ],
+    "description": "Represents a product sold to a customer on a specific date and territory.\nEach record corresponds to a single sales order line.",
+    "customAttributes": {}
+  },
+  "untypedProperties": []
+}

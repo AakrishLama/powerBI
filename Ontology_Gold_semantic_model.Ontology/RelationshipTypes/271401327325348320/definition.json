@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "271401327325348320",
+  "name": "A_sales_is_associated_with_a_sales_territory",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "26117967199371"
+  },
+  "target": {
+    "entityTypeId": "275820065285972"
+  },
+  "semanticEnrichment": {
+    "description": "A sale is associated with the sales territory where the transactions was recorded. ",
+    "customAttributes": {
+      "Businessd purpose": "geographic sales analysis",
+      "Cardinality": "Many sales -\u003E One territory"
+    }
+  }
+}
