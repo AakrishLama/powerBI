@@ -80,7 +80,7 @@ table dim_customer
 
 		annotation SummarizationSetBy = Automatic
 
-	/// customer annual income in usd. 
+	/// customer annual income in usd.
 	column AnnualIncome
 		dataType: double
 		lineageTag: 59aacbca-69ea-4cd7-a506-9f6e7acfb565

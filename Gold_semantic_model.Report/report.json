@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.76\",\"themeCollection\":{\"baseTheme\":{\"name\":\"Fluent2-CY26SU08\",\"version\":{\"visual\":\"2.12.0\",\"report\":\"3.4.0\",\"page\":\"2.3.1\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Fluent2-CY26SU08",
+            "path": "BaseThemes/Fluent2-CY26SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "5bcfbed87664b5d81011",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"60180609640510520390\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.658207771609835,\"y\":0,\"z\":0,\"width\":1050.5947660586837,\"height\":599.9048374306107,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"azureMap\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 599.90,
+          "width": 1050.59,
+          "x": 10.66,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1920.00
+    }
+  ]
+}
