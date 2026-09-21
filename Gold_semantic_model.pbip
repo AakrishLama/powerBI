@@ -4,7 +4,7 @@
   "artifacts": [
     {
       "report": {
-        "path": "Gold_semantic_model.Report"
+        "path": "finalized_draft_report.Report"
       }
     }
   ],
