@@ -1,4 +1,4 @@
-/// Represents a sellable product.afasdf
+/// Represents a sellable product. changed from vsc
 table dim_product
 	lineageTag: b48da5fe-ab2d-4677-9987-6ab221b24f9c
 	sourceLineageTag: [gold].[dim_product]
