@@ -27,7 +27,7 @@
       "name": "5bcfbed87664b5d81011",
       "visualContainers": [
         {
-          "config": "{\"name\":\"60180609640510520390\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.658207771609835,\"y\":0,\"z\":0,\"width\":1050.5947660586837,\"height\":599.9048374306107,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"azureMap\",\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"60180609640510520390\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.658207771609835,\"y\":0,\"z\":0,\"width\":1050.5947660586837,\"height\":599.9048374306107,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 599.90,
           "width": 1050.59,
